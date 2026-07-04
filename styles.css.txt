@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+    background: white;
+}
+
+.logo {
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0B5FA5;
+    font-weight: bold;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #f8fbff, #f0fff5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #0B5FA5;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #2E8B57;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.section {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #0B5FA5;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    width: 260px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contact {
+    background: #0B5FA5;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul{
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Buds Pre-School & Day Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <img src="assets/logo.png" class="logo" alt="Blooming Buds">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Where Little Buds Bloom Into Bright Futures 🌸</h1>
+        <p>
+            Safe, joyful and activity-based learning for children aged 2–6 years.
+        </p>
+        <a class="btn" href="#contact">Admissions Open</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        At Blooming Buds, we believe every child is unique and learns best through love,
+        play, and exploration. Our focus is on academics, creativity, confidence, and values.
+    </p>
+</section>
+
+<section id="programs" class="section">
+    <h2>Programs Offered</h2>
+
+    <div class="cards">
+        <div class="card">Play Group (2+)</div>
+        <div class="card">Nursery (3+)</div>
+        <div class="card">LKG (4+)</div>
+        <div class="card">UKG (5+)</div>
+        <div class="card">Day Care</div>
+    </div>
+</section>
+
+<section id="activities" class="section">
+    <h2>Daily Activities</h2>
+
+    <div class="cards">
+        <div class="card">Prayer & Slokas</div>
+        <div class="card">Rhymes</div>
+        <div class="card">Story Telling</div>
+        <div class="card">Painting</div>
+        <div class="card">Dance & Music</div>
+        <div class="card">Games</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Choose Us?</h2>
+
+    <div class="cards">
+        <div class="card">Caring Teachers</div>
+        <div class="card">Safe Environment</div>
+        <div class="card">CCTV Monitoring</div>
+        <div class="card">Activity Based Learning</div>
+        <div class="card">Hygienic Premises</div>
+        <div class="card">Parent Communication</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Teachers Colony, B.N. Reddy Nagar, Hyderabad</p>
+    <p>96766 05343 | 81870 83852</p>
+</section>
+
+<footer>
+    <p>© 2026 Blooming Buds Pre-School & Day Care</p>
+</footer>
+
+</body>
+</html>
