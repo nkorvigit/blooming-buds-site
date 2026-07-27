@@ -1,2518 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
-  
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Blooming Buds Pre-School & Day Care | Best Preschool in Hyderabad</title>
+    <!-- Flags that JS is available so reveal animations can start hidden.
+       Inline and before the stylesheet so it runs ahead of the first paint. -->
+    <script>document.documentElement.classList.add("js");</script>
 
-  <meta
-    name="description"
-    content="Blooming Buds Pre-School & Day Care in Hyderabad provides a safe, joyful and engaging learning environment for Play Group, Nursery, PP-I and PP-II with experienced teachers, activity-based learning and holistic child development."
-  />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
 
-  <meta
-    name="keywords"
-    content="Blooming Buds, Blooming Buds Preschool, Preschool Hyderabad, Play School Hyderabad, Day Care Hyderabad, Nursery School, Kindergarten, PP1, PP2, Early Childhood Education"
-  />
+    <title>Blooming Buds Pre-School & Day Care | Best Preschool in Hyderabad</title>
 
-  <meta name="author" content="Blooming Buds Pre-School & Day Care" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#2D9CDB" />
+    <meta name="description"
+        content="Blooming Buds Pre-School & Day Care in Hyderabad provides a safe, joyful and engaging learning environment for Play Group, Nursery, PP-I and PP-II with experienced teachers, activity-based learning and holistic child development." />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Blooming Buds Pre-School & Day Care" />
-  <meta
-    property="og:description"
-    content="A premium preschool in Hyderabad nurturing young minds through joyful learning, creativity and care."
-  />
-  <meta property="og:image" content="images/logo.png" />
-  <meta property="og:url" content="https://bloomingbudsschools.in/" />
-  <meta property="og:site_name" content="Blooming Buds Pre-School & Day Care" />
+    <meta name="keywords"
+        content="Blooming Buds, Blooming Buds Preschool, Preschool Hyderabad, Play School Hyderabad, Day Care Hyderabad, Nursery School, Kindergarten, PP1, PP2, Early Childhood Education" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta
-    name="twitter:title"
-    content="Blooming Buds Pre-School & Day Care"
-  />
-  <meta
-    name="twitter:description"
-    content="Best Preschool & Day Care in Hyderabad."
-  />
-  <meta name="twitter:image" content="images/logo.png" />
+    <meta name="author" content="Blooming Buds Pre-School & Day Care" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2D9CDB" />
 
-  <link rel="canonical" href="https://bloomingbudsschools.in/" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blooming Buds Pre-School & Day Care" />
+    <meta property="og:description"
+        content="A premium preschool in Hyderabad nurturing young minds through joyful learning, creativity and care." />
+    <meta property="og:image" content="https://bloomingbudsschools.in/images/logo.png" />
+    <meta property="og:image:width" content="386" />
+    <meta property="og:image:height" content="519" />
+    <meta property="og:url" content="https://bloomingbudsschools.in/" />
+    <meta property="og:site_name" content="Blooming Buds Pre-School & Day Care" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <link rel="apple-touch-icon" href="images/favicon.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blooming Buds Pre-School & Day Care" />
+    <meta name="twitter:description" content="Best Preschool & Day Care in Hyderabad." />
+    <meta name="twitter:image" content="https://bloomingbudsschools.in/images/logo.png" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="canonical" href="https://bloomingbudsschools.in/" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
 
-  <!-- Remix Icons -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
+    <!-- Preload the hero image: it's the largest LCP candidate on the page -->
+    <link rel="preload" as="image" href="images/hero-main.jpg" fetchpriority="high" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <!-- TODO: fill in streetAddress/postalCode, telephone and sameAs (social profile URLs)
+       once real business details are available. -->
+    <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Preschool",
     "name":"Blooming Buds Pre-School & Day Care",
     "url":"https://bloomingbudsschools.in/",
     "logo":"https://bloomingbudsschools.in/images/logo.png",
-    "image":"https://bloomingbudsschools.in/images/school.jpg",
-    "telephone":"+91-XXXXXXXXXX",
+    "image":"https://bloomingbudsschools.in/images/hero-main.jpg",
+    "telephone":"+91-96766 05343",
     "address":{
       "@type":"PostalAddress",
+      "streetAddress":"",
       "addressLocality":"Hyderabad",
       "addressRegion":"Telangana",
+      "postalCode":"",
       "addressCountry":"IN"
     },
     "sameAs":[]
   }
   </script>
-  
+
 </head>
 
 <body>
 
-  <!-- ========================= -->
-  <!-- Announcement Bar -->
-  <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- Announcement Bar -->
+    <!-- ========================= -->
 
-  <div class="announcement-bar">
-    <div class="announcement-track">
-      <span>
-        📢 Admissions Open for Academic Year 2026–27 | Limited Seats Available
-      </span>
-    </div>
-  </div>
-
-  <!-- ========================= -->
-  <!-- Header -->
-  <!-- ========================= -->
-
-  <header class="header" id="header">
-
-    <div class="container">
-
-      <nav class="navbar">
-
-        <!-- Logo -->
-
-        <a href="index.html" class="logo">
-
-          <img
-            src="images/logo.png"
-            alt="Blooming Buds Logo"
-            class="logo-img"
-          />
-
-          <div class="logo-text">
-
-            <h2>
-              <span class="blue">Blooming</span>
-              <span class="green">Buds</span>
-            </h2>
-
-            <p>Pre-School & Day Care</p>
-
-          </div>
-
-        </a>
-
-        <!-- Navigation -->
-
-        <ul class="nav-menu" id="nav-menu">
-
-          <li>
-            <a href="#home" class="nav-link active">Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="nav-link">About</a>
-          </li>
-
-          <li>
-            <a href="#programs" class="nav-link">Programs</a>
-          </li>
-
-          <li>
-            <a href="#activities" class="nav-link">Activities</a>
-          </li>
-
-          <li>
-            <a href="#facilities" class="nav-link">Facilities</a>
-          </li>
-
-          <li>
-            <a href="#gallery" class="nav-link">Gallery</a>
-          </li>
-
-          <li>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-
-        </ul>
-
-        <!-- CTA -->
-
-        <div class="nav-actions">
-
-          <a href="#admission" class="btn-primary">
-            Enquire Now
-          </a>
-
-          <button
-            class="menu-toggle"
-            id="menu-toggle"
-            aria-label="Toggle Navigation"
-            aria-expanded="false"
-            aria-controls="nav-menu"
-          >
-            <i class="ri-menu-3-line"></i>
-          </button>
-
-        </div>
-
-      </nav>
-
-    </div>
-
-  </header>
-  
-  <!-- ========================================================= -->
-<!-- Hero Section -->
-<!-- ========================================================= -->
-
-<section class="hero" id="home">
-
-    <!-- Decorative Shapes -->
-
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-    <div class="shape shape-4"></div>
-    <div class="shape shape-5"></div>
-
-    <div class="container hero-container">
-
-        <!-- Left Content -->
-
-        <div class="hero-content">
-
-            <span class="hero-badge">
-                <i class="ri-award-fill"></i> Admissions Open 2026–2027
+    <div class="announcement-bar" id="announcementBar">
+        <div class="announcement-track">
+            <span>
+                📢 Admissions Open for Academic Year 2026–27 | Limited Seats Available
             </span>
-
-            <h1>
-                Where Little Minds
-                <span>Bloom</span>
-                Into Bright Futures
-            </h1>
-
-            <p class="hero-description">
-                Blooming Buds Pre-School & Day Care provides a joyful,
-                safe and nurturing environment where children learn,
-                explore, imagine and grow with confidence through
-                activity-based education and individual attention.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="btn-primary">
-                    Book a School Visit
-                </a>
-
-                <a href="#programs" class="btn-secondary">
-                    Explore Programs
-                </a>
-
-            </div>
-
-            <!-- Quick Highlights -->
-
-            <div class="hero-highlights">
-
-                <div class="highlight-card">
-
-                    <div class="highlight-icon">
-                        <i class="ri-shield-check-line"></i>
-                    </div>
-
-                    <div>
-                        <h4>Safe Campus</h4>
-                        <p>Child Friendly Environment</p>
-                    </div>
-
-                </div>
-
-                <div class="highlight-card">
-
-                    <div class="highlight-icon">
-                        <i class="ri-book-open-line"></i>
-                    </div>
-
-                    <div>
-                        <h4>Activity Learning</h4>
-                        <p>Play • Learn • Explore</p>
-                    </div>
-
-                </div>
-
-                <div class="highlight-card">
-
-                    <div class="highlight-icon">
-                        <i class="ri-heart-3-fill"></i>
-                    </div>
-
-                    <div>
-                        <h4>Caring Teachers</h4>
-                        <p>Personal Attention</p>
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
-
-        <!-- Hero Images -->
-
-        <div class="hero-image">
-
-            <div class="hero-image-wrapper glass">
-
-                <img
-                    src="images/hero-main.png"
-                    alt="Children learning happily at Blooming Buds Preschool"
-                    class="main-hero-image"
-                    loading="eager"
-                >
-
-                <div class="floating-card card-one">
-
-                    <div class="floating-icon">
-                        🎨
-                    </div>
-
-                    <div>
-                        <h5>Creative Learning</h5>
-                        <p>Hands-on Activities</p>
-                    </div>
-
-                </div>
-
-                <div class="floating-card card-two">
-
-                    <div class="floating-icon">
-                        ⭐
-                    </div>
-
-                    <div>
-                        <h5>Holistic Growth</h5>
-                        <p>Mind • Body • Values</p>
-                    </div>
-
-                </div>
-
-                <div class="floating-card card-three">
-
-                    <div class="floating-icon">
-                        🎓
-                    </div>
-
-                    <div>
-                        <h5>Experienced Faculty</h5>
-                        <p>Learning with Care</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+        <button class="announcement-close" id="announcementClose" type="button" aria-label="Dismiss announcement">
+            <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
     </div>
 
-    <!-- Hero Statistics -->
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
 
-    <div class="hero-stats">
+    <header class="header" id="header">
 
         <div class="container">
 
-            <div class="stats-grid">
+            <nav class="navbar">
 
-                <div class="stat-item">
+                <!-- Logo -->
 
-                    <h2 class="counter" data-target="4">0</h2>
+                <a href="index.html" class="logo">
 
-                    <p>Programs</p>
+                    <img src="images/logo.png" width="386" height="519" alt="Blooming Buds Logo" class="logo-img" />
 
-                </div>
+                    <div class="logo-text">
 
-                <div class="stat-item">
-
-                    <h2 class="counter" data-target="100">0</h2>
-
-                    <span>+</span>
-
-                    <p>Fun Activities</p>
-
-                </div>
-
-                <div class="stat-item">
-
-                    <h2 class="counter" data-target="100">0</h2>
-
-                    <span>%</span>
-
-                    <p>Safe Environment</p>
-
-                </div>
-
-                <div class="stat-item">
-
-                    <h2 class="counter" data-target="1">0</h2>
-
-                    <span>:8</span>
-
-                    <p>Teacher–Student Focus</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- SVG Wave -->
-
-    <div class="hero-wave">
-
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-            preserveAspectRatio="none"
-        >
-
-            <path
-                fill="#ffffff"
-                fill-opacity="1"
-                d="M0,160L80,186.7C160,213,320,267,480,272C640,277,800,235,960,208C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-
-        </svg>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================================= -->
-<!-- About Section -->
-<!-- ========================================================= -->
-
-<section class="about section" id="about">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                About Blooming Buds
-            </span>
-
-            <h2>
-                Building Strong Foundations for
-                <span>Happy Lifelong Learners</span>
-            </h2>
-
-            <p>
-                At Blooming Buds Pre-School & Day Care, we believe every child
-                is unique and deserves a nurturing environment that encourages
-                curiosity, creativity and confidence. Our child-centered
-                approach combines structured learning with joyful play to help
-                children develop academically, socially and emotionally.
-            </p>
-
-        </div>
-
-        <div class="about-wrapper">
-
-            <!-- Left Images -->
-
-            <div class="about-images">
-
-                <div class="about-image-main">
-
-                    <img
-                        src="images/about-main.jpg"
-                        alt="Children learning through play at Blooming Buds"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="about-image-small">
-
-                    <img
-                        src="images/about-secondary.jpg"
-                        alt="Creative classroom activities"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="experience-badge">
-
-                    <h3>Play</h3>
-                    <span>Learn</span>
-                    <small>Grow</small>
-
-                </div>
-
-            </div>
-
-            <!-- Right Content -->
-
-            <div class="about-content">
-
-                <h3>
-                    A Place Where Every Child Feels Safe, Loved and Inspired
-                </h3>
-
-                <p>
-                    Our classrooms are thoughtfully designed to inspire
-                    exploration, imagination and independent thinking. Through
-                    engaging activities, interactive learning and caring
-                    guidance, we help every child discover the joy of learning
-                    while building essential life skills.
-                </p>
-
-                <p>
-                    We focus on developing communication, creativity,
-                    collaboration, physical development, problem-solving,
-                    emotional well-being and positive values that prepare
-                    children for future academic success.
-                </p>
-
-                <div class="about-features">
-
-                    <div class="feature-item">
-
-                        <div class="feature-icon">
-                            <i class="ri-check-double-fill"></i>
-                        </div>
-
-                        <div>
-
-                            <h4>Activity-Based Learning</h4>
-
-                            <p>
-                                Interactive lessons that make learning exciting
-                                and memorable.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="feature-item">
-
-                        <div class="feature-icon">
-                            <i class="ri-check-double-fill"></i>
-                        </div>
-
-                        <div>
-
-                            <h4>Safe & Hygienic Campus</h4>
-
-                            <p>
-                                Clean classrooms with a secure environment for
-                                every child.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="feature-item">
-
-                        <div class="feature-icon">
-                            <i class="ri-check-double-fill"></i>
-                        </div>
-
-                        <div>
-
-                            <h4>Individual Attention</h4>
-
-                            <p>
-                                Personalized guidance to support every child's
-                                unique learning journey.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="feature-item">
-
-                        <div class="feature-icon">
-                            <i class="ri-check-double-fill"></i>
-                        </div>
-
-                        <div>
-
-                            <h4>Holistic Development</h4>
-
-                            <p>
-                                Encouraging intellectual, emotional, social and
-                                physical growth together.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="about-buttons">
-
-                    <a href="#programs" class="btn-primary">
-                        View Our Programs
-                    </a>
-
-                    <a href="#contact" class="btn-secondary">
-                        Schedule a Visit
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Why Choose Us Section -->
-<!-- ========================================================= -->
-
-<section class="why-choose section" id="why-choose">
-
-    <div class="floating-circle circle-1"></div>
-    <div class="floating-circle circle-2"></div>
-    <div class="floating-circle circle-3"></div>
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Why Choose Us
-            </span>
-
-            <h2>
-                Every Child Deserves the
-                <span>Best Start in Life</span>
-            </h2>
-
-            <p>
-                At Blooming Buds Pre-School & Day Care, we provide a caring,
-                stimulating and joyful environment where children build
-                confidence, curiosity and lifelong learning skills through
-                meaningful experiences every day.
-            </p>
-
-        </div>
-
-        <div class="choose-grid">
-
-            <!-- Card 1 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon blue-bg">
-                    <i class="ri-shield-star-line"></i>
-                </div>
-
-                <h3>Safe & Secure Campus</h3>
-
-                <p>
-                    Child safety is our highest priority. We maintain a secure,
-                    hygienic and welcoming environment where children can learn
-                    and play with confidence.
-                </p>
-
-            </article>
-
-            <!-- Card 2 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon green-bg">
-                    <i class="ri-book-open-line"></i>
-                </div>
-
-                <h3>Activity Based Learning</h3>
-
-                <p>
-                    Children learn through storytelling, experiments,
-                    educational games, music, art and interactive classroom
-                    activities that make learning enjoyable.
-                </p>
-
-            </article>
-
-            <!-- Card 3 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon pink-bg">
-                    <i class="ri-user-heart-line"></i>
-                </div>
-
-                <h3>Experienced & Caring Teachers</h3>
-
-                <p>
-                    Our passionate teachers provide individual attention,
-                    encouragement and emotional support to help every child
-                    flourish.
-                </p>
-
-            </article>
-
-            <!-- Card 4 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon yellow-bg">
-                    <i class="ri-palette-line"></i>
-                </div>
-
-                <h3>Creative Development</h3>
-
-                <p>
-                    Drawing, painting, crafts, music, dance and imaginative
-                    play help children express themselves confidently.
-                </p>
-
-            </article>
-
-            <!-- Card 5 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon blue-bg">
-                    <i class="ri-team-line"></i>
-                </div>
-
-                <h3>Holistic Growth</h3>
-
-                <p>
-                    We nurture communication, social skills, emotional
-                    intelligence, physical fitness and early academic readiness
-                    together.
-                </p>
-
-            </article>
-
-            <!-- Card 6 -->
-
-            <article class="choose-card glass">
-
-                <div class="choose-icon green-bg">
-                    <i class="ri-home-heart-line"></i>
-                </div>
-
-                <h3>Parent Partnership</h3>
-
-                <p>
-                    We work closely with parents through regular communication,
-                    progress updates and collaborative learning support.
-                </p>
-
-            </article>
-
-        </div>
-
-        <!-- Bottom Highlights -->
-
-        <div class="choose-highlights">
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Interactive Classrooms</span>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Joyful Learning Environment</span>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Personal Attention</span>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Strong Foundation Skills</span>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Fun Filled Activities</span>
-
-            </div>
-
-            <div class="highlight-box">
-
-                <i class="ri-check-double-fill"></i>
-
-                <span>Safe & Caring Atmosphere</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Programs Section -->
-<!-- ========================================================= -->
-
-<section class="programs section" id="programs">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Our Programs
-            </span>
-
-            <h2>
-                Age Appropriate Learning for
-                <span>Every Stage of Childhood</span>
-            </h2>
-
-            <p>
-                Our curriculum is thoughtfully designed to support every stage
-                of early childhood development through play, creativity,
-                exploration and structured learning experiences.
-            </p>
-
-        </div>
-
-        <div class="program-grid">
-
-            <!-- Play Group -->
-
-            <article class="program-card">
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program-playgroup.jpg"
-                        alt="Play Group Program"
-                        loading="lazy"
-                    >
-
-                    <span class="program-age">
-                        2 - 3 Years
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <h3>Play Group</h3>
-
-                    <p>
-                        A joyful introduction to school life where little ones
-                        develop confidence, independence and social skills
-                        through fun-filled activities and guided play.
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Sensory Activities
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Music & Rhymes
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Free Play
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Fine Motor Skills
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Social Interaction
-                        </li>
-
-                    </ul>
-
-                    <a href="#contact" class="program-btn">
-                        Enquire Now
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- Nursery -->
-
-            <article class="program-card featured">
-
-                <div class="program-ribbon">
-                    Most Popular
-                </div>
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program-nursery.jpg"
-                        alt="Nursery Program"
-                        loading="lazy"
-                    >
-
-                    <span class="program-age">
-                        3 - 4 Years
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <h3>Nursery</h3>
-
-                    <p>
-                        Children develop language, number concepts, creativity,
-                        communication and confidence through engaging classroom
-                        experiences and activity-based learning.
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Early Literacy
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Number Readiness
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Storytelling
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Creative Art
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Outdoor Play
-                        </li>
-
-                    </ul>
-
-                    <a href="#contact" class="program-btn">
-                        Enquire Now
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- PP-I -->
-
-            <article class="program-card">
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program-pp1.jpg"
-                        alt="PP-I Program"
-                        loading="lazy"
-                    >
-
-                    <span class="program-age">
-                        4 - 5 Years
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <h3>PP-I</h3>
-
-                    <p>
-                        A balanced curriculum that strengthens language,
-                        numeracy, observation, creativity and logical thinking
-                        while preparing children for formal schooling.
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Reading Readiness
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Writing Practice
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Mathematics Basics
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Science Activities
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Team Learning
-                        </li>
-
-                    </ul>
-
-                    <a href="#contact" class="program-btn">
-                        Enquire Now
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- PP-II -->
-
-            <article class="program-card">
-
-                <div class="program-image">
-
-                    <img
-                        src="images/program-pp2.jpg"
-                        alt="PP-II Program"
-                        loading="lazy"
-                    >
-
-                    <span class="program-age">
-                        5 - 6 Years
-                    </span>
-
-                </div>
-
-                <div class="program-content">
-
-                    <h3>PP-II</h3>
-
-                    <p>
-                        Preparing children for primary school through advanced
-                        foundational learning, communication skills, confidence
-                        building and independent thinking.
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Reading & Writing
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Mathematics
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            General Awareness
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            Problem Solving
-                        </li>
-
-                        <li>
-                            <i class="ri-checkbox-circle-fill"></i>
-                            School Readiness
-                        </li>
-
-                    </ul>
-
-                    <a href="#contact" class="program-btn">
-                        Enquire Now
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Activities Section -->
-<!-- ========================================================= -->
-
-<section class="activities section" id="activities">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Fun Learning Activities
-            </span>
-
-            <h2>
-                Learning Through
-                <span>Play, Creativity & Exploration</span>
-            </h2>
-
-            <p>
-                Every day at Blooming Buds is filled with exciting experiences
-                that inspire imagination, curiosity and confidence. Our
-                activity-based curriculum helps children develop cognitive,
-                physical, emotional and social skills while having fun.
-            </p>
-
-        </div>
-
-        <div class="activities-grid">
-
-            <!-- Activity 1 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-art.jpg"
-                        alt="Art and Craft Activity"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🎨
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Art & Craft</h3>
-
-                    <p>
-                        Painting, colouring, drawing and craft activities
-                        encourage creativity, imagination and fine motor
-                        development.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 2 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-music.jpg"
-                        alt="Music and Dance"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🎵
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Music & Dance</h3>
-
-                    <p>
-                        Rhymes, songs, dance and rhythm activities improve
-                        confidence, expression and coordination.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 3 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-story.jpg"
-                        alt="Story Telling"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        📚
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Story Time</h3>
-
-                    <p>
-                        Interactive storytelling develops listening skills,
-                        vocabulary, imagination and communication.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 4 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-games.jpg"
-                        alt="Indoor Games"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🧩
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Educational Games</h3>
-
-                    <p>
-                        Fun games strengthen memory, observation,
-                        problem-solving and teamwork while keeping learning
-                        enjoyable.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 5 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-outdoor.jpg"
-                        alt="Outdoor Play"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        ⚽
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Outdoor Play</h3>
-
-                    <p>
-                        Physical activities build strength, balance,
-                        coordination and healthy social interaction.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 6 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-festival.jpg"
-                        alt="Festival Celebrations"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🎉
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Festival Celebrations</h3>
-
-                    <p>
-                        Celebrating cultural festivals helps children learn
-                        traditions, values, diversity and togetherness in a
-                        joyful way.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 7 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-science.jpg"
-                        alt="Simple Science Activities"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🔬
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Discovery Activities</h3>
-
-                    <p>
-                        Simple experiments and observation-based learning spark
-                        curiosity and encourage children to ask questions.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Activity 8 -->
-
-            <article class="activity-card">
-
-                <div class="activity-image">
-
-                    <img
-                        src="images/activity-yoga.jpg"
-                        alt="Kids Yoga"
-                        loading="lazy"
-                    >
-
-                    <div class="activity-icon">
-                        🧘
-                    </div>
-
-                </div>
-
-                <div class="activity-content">
-
-                    <h3>Yoga & Wellness</h3>
-
-                    <p>
-                        Gentle yoga and mindfulness activities improve focus,
-                        flexibility, relaxation and emotional well-being.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-        <!-- Bottom Features -->
-
-        <div class="activities-features">
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Activity Based Learning
-            </div>
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Creative Thinking
-            </div>
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Social Development
-            </div>
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Communication Skills
-            </div>
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Physical Fitness
-            </div>
-
-            <div class="feature-pill">
-                <i class="ri-star-fill"></i>
-                Joyful Learning
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Facilities Section -->
-<!-- ========================================================= -->
-
-<section class="facilities section" id="facilities">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Our Facilities
-            </span>
-
-            <h2>
-                A Safe, Bright &
-                <span>Child-Friendly Campus</span>
-            </h2>
-
-            <p>
-                Blooming Buds Pre-School & Day Care offers thoughtfully designed
-                learning spaces that encourage exploration, creativity and
-                confidence. Every area of our campus is planned with children's
-                comfort, safety and development in mind.
-            </p>
-
-        </div>
-
-        <div class="facilities-grid">
-
-            <!-- Facility 1 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-classroom.jpg"
-                        alt="Interactive Classroom"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-school-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Interactive Classrooms</h3>
-
-                    <p>
-                        Bright, colorful and engaging classrooms designed to
-                        inspire curiosity, creativity and joyful learning.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Facility 2 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-play-area.jpg"
-                        alt="Play Area"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-football-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Play Area</h3>
-
-                    <p>
-                        Dedicated indoor and outdoor play spaces encouraging
-                        physical activity, teamwork and confidence.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Facility 3 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-library.jpg"
-                        alt="Reading Corner"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-book-2-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Reading Corner</h3>
-
-                    <p>
-                        A cozy library filled with storybooks that develops
-                        language, imagination and reading habits.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Facility 4 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-art.jpg"
-                        alt="Creative Activity Zone"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-palette-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Creative Activity Zone</h3>
-
-                    <p>
-                        A dedicated space for art, craft, music and hands-on
-                        learning that nurtures creativity and self-expression.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Facility 5 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-hygiene.jpg"
-                        alt="Clean and Hygienic Environment"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-heart-pulse-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Clean & Hygienic Environment</h3>
-
-                    <p>
-                        Daily sanitization, child-friendly hygiene practices and
-                        well-maintained classrooms ensure a healthy learning
-                        environment.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- Facility 6 -->
-
-            <article class="facility-card glass">
-
-                <div class="facility-image">
-
-                    <img
-                        src="images/facility-daycare.jpg"
-                        alt="Day Care Support"
-                        loading="lazy">
-
-                    <div class="facility-icon">
-                        <i class="ri-home-heart-line"></i>
-                    </div>
-
-                </div>
-
-                <div class="facility-content">
-
-                    <h3>Day Care Support</h3>
-
-                    <p>
-                        A caring, secure and comfortable day care environment
-                        where children feel safe, happy and well looked after.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-        <div class="facility-highlights">
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Child-Friendly Furniture</span>
-            </div>
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Safe Learning Environment</span>
-            </div>
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Bright & Spacious Classrooms</span>
-            </div>
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Learning Through Play</span>
-            </div>
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Interactive Teaching Aids</span>
-            </div>
-
-            <div class="highlight-item">
-                <i class="ri-check-line"></i>
-                <span>Warm & Caring Atmosphere</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================================= -->
-<!-- Gallery Section -->
-<!-- ========================================================= -->
-
-<!-- <section class="gallery section" id="gallery"> -->
-
-    <!-- <div class="container"> -->
-
-        <!-- <div class="section-heading"> -->
-
-            <!-- <span class="section-tag"> -->
-                <!-- Our Gallery -->
-            <!-- </span> -->
-
-            <!-- <h2> -->
-                <!-- Capturing Moments of -->
-                <!-- <span>Learning & Happiness</span> -->
-            <!-- </h2> -->
-
-            <!-- <p> -->
-                <!-- Every smile tells a story. Explore glimpses of our classrooms, -->
-                <!-- celebrations, creative activities and joyful moments that make -->
-                <!-- Blooming Buds a wonderful place for every child to learn and -->
-                <!-- grow. -->
-            <!-- </p> -->
-
-        <!-- </div> -->
-
-        <!-- <div class="gallery-grid"> -->
-
-            <!-- Image 1 -->
-
-            <!-- <figure class="gallery-item gallery-large"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-1.jpg" -->
-                    <!-- alt="Children enjoying classroom activities" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Joyful Learning</h4> -->
-
-                    <!-- <p>Interactive classroom experiences every day.</p> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 2 -->
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-2.jpg" -->
-                    <!-- alt="Creative art and craft session" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Art & Craft</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 3 -->
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-3.jpg" -->
-                    <!-- alt="Outdoor play activities" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Outdoor Fun</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 4 -->
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-4.jpg" -->
-                    <!-- alt="Story telling session" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Story Time</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 5 -->
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-5.jpg" -->
-                    <!-- alt="Festival celebration" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Celebrations</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 6 --> 
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-6.jpg" -->
-                    <!-- alt="Music and dance activity" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Music & Dance</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 7 -->
-
-            <!-- <figure class="gallery-item"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-7.jpg" -->
-                    <!-- alt="Creative classroom" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Creative Classroom</h4> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-            <!-- Image 8 --> 
-
-            <!-- <figure class="gallery-item gallery-wide"> -->
-
-                <!-- <img -->
-                    <!-- src="images/gallery-8.jpg" -->
-                    <!-- alt="Happy children at Blooming Buds" -->
-                    <!-- loading="lazy" -->
-                <!-- > -->
-
-                <!-- <figcaption> -->
-
-                    <!-- <h4>Happy Memories</h4> -->
-
-                    <!-- <p>Creating smiles that last a lifetime.</p> -->
-
-                <!-- </figcaption> -->
-
-            <!-- </figure> -->
-
-        <!-- </div> -->
-
-       <!-- Gallery Statistics --> 
-
-        <!-- <div class="gallery-stats"> -->
-
-            <!-- <div class="gallery-stat"> -->
-
-                <!-- <h3 class="counter" data-target="100">0</h3> -->
-
-                <!-- <span>+</span> -->
-
-                <!-- <p>Learning Activities</p> -->
-
-            <!-- </div> -->
-
-            <!-- <div class="gallery-stat"> -->
-
-                <!-- <h3 class="counter" data-target="365">0</h3> -->
-
-                <!-- <span>+</span> -->
-
-                <!-- <p>Happy Learning Days</p> -->
-
-            <!-- </div> -->
-
-            <!-- <div class="gallery-stat"> -->
-
-                <!-- <h3 class="counter" data-target="20">0</h3> -->
-
-                <!-- <span>+</span> -->
-
-                <!-- <p>Creative Events</p> -->
-
-            <!-- </div> -->
-
-            <!-- <div class="gallery-stat"> -->
-
-                <!-- <h3 class="counter" data-target="100">0</h3> -->
-
-                <!-- <span>%</span> -->
-
-                <!-- <p>Smiles Every Day</p> -->
-
-            <!-- </div> -->
-
-        <!-- </div> -->
-
-    <!-- </div> -->
-
-<!-- </section> -->
-
-<!-- ========================================================= -->
-<!-- Testimonials Section -->
-<!-- ========================================================= -->
-
-<section class="testimonials section" id="testimonials">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Parent Testimonials
-            </span>
-
-            <h2>
-                Trusted by
-                <span>Happy Parents</span>
-            </h2>
-
-            <p>
-                Nothing makes us happier than seeing children enjoy learning and
-                parents feel confident about their child's early education.
-                Here are a few words shared by our wonderful Blooming Buds
-                families.
-            </p>
-
-        </div>
-
-        <div class="testimonials-grid">
-
-            <!-- Testimonial 1 -->
-
-            <article class="testimonial-card glass">
-
-                <div class="testimonial-rating">
-
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-
-                </div>
-
-                <p class="testimonial-text">
-                    "Blooming Buds has been a wonderful beginning for our child.
-                    The teachers are caring, patient and always encourage
-                    learning through fun activities. We have seen tremendous
-                    improvement in confidence and communication."
-                </p>
-
-                <div class="testimonial-author">
-
-                    <div class="author-avatar">
-                        <i class="ri-user-smile-line"></i>
-                    </div>
-
-                    <div>
-
-                        <h4>Parent</h4>
-
-                        <span>Nursery</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Testimonial 2 -->
-
-            <article class="testimonial-card glass">
-
-                <div class="testimonial-rating">
-
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-
-                </div>
-
-                <p class="testimonial-text">
-                    "The classrooms are bright, clean and welcoming. Every day
-                    our daughter comes home excited to share what she learned.
-                    We appreciate the caring environment and personal attention
-                    given to every child."
-                </p>
-
-                <div class="testimonial-author">
-
-                    <div class="author-avatar">
-                        <i class="ri-user-heart-line"></i>
-                    </div>
-
-                    <div>
-
-                        <h4>Parent</h4>
-
-                        <span>PP-I</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Testimonial 3 -->
-
-            <article class="testimonial-card glass">
-
-                <div class="testimonial-rating">
-
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-
-                </div>
-
-                <p class="testimonial-text">
-                    "We were looking for a preschool where our son would feel
-                    safe and happy. Blooming Buds exceeded our expectations.
-                    The teachers are friendly and the activity-based learning
-                    keeps children engaged every day."
-                </p>
-
-                <div class="testimonial-author">
-
-                    <div class="author-avatar">
-                        <i class="ri-parent-line"></i>
-                    </div>
-
-                    <div>
-
-                        <h4>Parent</h4>
-
-                        <span>Play Group</span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-        <!-- Trust Highlights -->
-
-        <div class="testimonial-highlights">
-
-            <div class="trust-item">
-
-                <div class="trust-icon">
-                    <i class="ri-emotion-happy-line"></i>
-                </div>
-
-                <h3>Happy Children</h3>
-
-                <p>
-                    A joyful environment where every child enjoys coming to
-                    school.
-                </p>
-
-            </div>
-
-            <div class="trust-item">
-
-                <div class="trust-icon">
-                    <i class="ri-heart-2-line"></i>
-                </div>
-
-                <h3>Caring Teachers</h3>
-
-                <p>
-                    Passionate educators who nurture every child's individual
-                    strengths.
-                </p>
-
-            </div>
-
-            <div class="trust-item">
-
-                <div class="trust-icon">
-                    <i class="ri-award-line"></i>
-                </div>
-
-                <h3>Quality Learning</h3>
-
-                <p>
-                    A balanced curriculum that prepares children for lifelong
-                    success.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Admissions Section -->
-<!-- ========================================================= -->
-
-<section class="admission section" id="admission">
-
-    <div class="container">
-
-        <div class="admission-wrapper glass">
-
-            <div class="admission-content">
-
-                <span class="section-tag">
-                    Admissions Open
-                </span>
-
-                <h2>
-                    Give Your Child the
-                    <span>Best Start to Learning</span>
-                </h2>
-
-                <p>
-                    Admissions are now open for the Academic Year 2026–2027.
-                    Join Blooming Buds Pre-School & Day Care and provide your
-                    child with a joyful, caring and inspiring environment where
-                    learning happens through exploration, creativity and play.
-                </p>
-
-                <div class="admission-features">
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Admissions Open for Play Group, Nursery, PP-I & PP-II</span>
-
-                    </div>
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Activity-Based Learning Curriculum</span>
-
-                    </div>
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Safe, Hygienic & Child-Friendly Campus</span>
-
-                    </div>
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Experienced & Caring Teachers</span>
-
-                    </div>
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Individual Attention for Every Child</span>
-
-                    </div>
-
-                    <div class="admission-feature">
-
-                        <i class="ri-checkbox-circle-fill"></i>
-
-                        <span>Limited Seats Available</span>
-
-                    </div>
-
-                </div>
-
-                <div class="admission-buttons">
-
-                    <a href="#contact" class="btn-primary">
-                        Enquire Now
-                    </a>
-
-                    <a href="tel:+91XXXXXXXXXX" class="btn-secondary">
-                        Call Now
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="admission-image">
-
-                <img
-                    src="images/admission.jpg"
-                    alt="Admissions Open at Blooming Buds Preschool"
-                    loading="lazy"
-                >
-
-                <div class="admission-badge">
-
-                    <h3>2026–2027</h3>
-
-                    <p>Admissions Open</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Contact Section -->
-<!-- ========================================================= -->
-
-<section class="contact section" id="contact">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">
-                Contact Us
-            </span>
-
-            <h2>
-                We'd Love to
-                <span>Hear From You</span>
-            </h2>
-
-            <p>
-                Planning to visit our school or have questions about admissions?
-                Get in touch with us. Our team will be happy to assist you and
-                arrange a school visit at your convenience.
-            </p>
-
-        </div>
-
-        <div class="contact-wrapper">
-
-            <!-- Contact Information -->
-
-            <div class="contact-info">
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
-                        <i class="ri-map-pin-2-fill"></i>
-                    </div>
-
-                    <div>
-
-                        <h3>Visit Our School</h3>
-
-                        <p>
-                            Blooming Buds Pre-School & Day Care<br>
-                            Hyderabad, Telangana, India
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
-                        <i class="ri-phone-fill"></i>
-                    </div>
-
-                    <div>
-
-                        <h3>Call Us</h3>
-
-                        <p>
-                            <a href="tel:+91XXXXXXXXXX">
-                                +91 XXXXX XXXXX
-                            </a>
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
-                        <i class="ri-mail-fill"></i>
-                    </div>
-
-                    <div>
-
-                        <h3>Email</h3>
-
-                        <p>
-                            <a href="mailto:info@bloomingbudsschools.in">
-                                info@bloomingbudsschools.in
-                            </a>
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <div class="contact-icon">
-                        <i class="ri-time-fill"></i>
-                    </div>
-
-                    <div>
-
-                        <h3>School Hours</h3>
-
-                        <p>
-                            Monday – Saturday<br>
-                            9:00 AM – 5:00 PM
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Contact Form -->
-
-            <div class="contact-form-wrapper">
-
-                <form class="contact-form" action="#" method="post">
-
-                    <div class="form-group">
-
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Parent Name"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <input
-                            type="tel"
-                            name="phone"
-                            placeholder="Mobile Number"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <select name="program" required>
-
-                            <option value="">
-                                Select Program
-                            </option>
-
-                            <option>
-                                Play Group
-                            </option>
-
-                            <option>
-                                Nursery
-                            </option>
-
-                            <option>
-                                PP-I
-                            </option>
-
-                            <option>
-                                PP-II
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <textarea
-                            name="message"
-                            rows="5"
-                            placeholder="Your Message"
-                        ></textarea>
-
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="btn-primary submit-btn"
-                    >
-                        Send Enquiry
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-        <!-- Google Map -->
-
-        <div class="map-wrapper">
-
-            <iframe
-                title="Blooming Buds Pre-School & Day Care Location"
-                src="https://www.google.com/maps?q=Hyderabad,+Telangana&output=embed"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- Footer -->
-<!-- ========================================================= -->
-
-<footer class="footer">
-
-    <!-- SVG Wave -->
-
-    <div class="footer-wave">
-
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-            preserveAspectRatio="none">
-
-            <path
-                fill="#233042"
-                fill-opacity="1"
-                d="M0,96L60,122.7C120,149,240,203,360,202.7C480,203,600,149,720,149.3C840,149,960,203,1080,202.7C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-            </path>
-
-        </svg>
-
-    </div>
-
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <!-- School Info -->
-
-            <div class="footer-column">
-
-                <a href="#home" class="footer-logo">
-
-                    <img
-                        src="images/logo.png"
-                        alt="Blooming Buds Logo"
-                    >
-
-                    <div>
-
-                        <h3>
+                        <h2>
                             <span class="blue">Blooming</span>
                             <span class="green">Buds</span>
-                        </h3>
+                        </h2>
 
                         <p>Pre-School & Day Care</p>
 
@@ -2520,203 +135,2875 @@
 
                 </a>
 
-                <p class="footer-description">
+                <!-- Navigation -->
 
-                    Blooming Buds Pre-School & Day Care is committed to
-                    nurturing confident, curious and compassionate learners
-                    through joyful experiences, caring guidance and
-                    activity-based education.
+                <ul class="nav-menu" id="nav-menu">
+
+                    <li>
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+
+                    <li class="nav-item has-dropdown">
+
+                        <button
+                            type="button"
+                            class="dropdown-toggle"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            About Us
+                            <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner">
+
+                                <a href="#about" class="nav-link dropdown-link">Our Story</a>
+                                <a href="#why-choose" class="nav-link dropdown-link">Why Choose Us</a>
+                                <a href="#testimonials" class="nav-link dropdown-link">Testimonials</a>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="#programs" class="nav-link">Programs</a>
+                    </li>
+
+                    <li class="nav-item has-dropdown">
+
+                        <button
+                            type="button"
+                            class="dropdown-toggle"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                            School Life
+                            <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner">
+
+                                <a href="#activities" class="nav-link dropdown-link">Activities</a>
+                                <a href="#facilities" class="nav-link dropdown-link">Facilities</a>
+                                <a href="#gallery" class="nav-link dropdown-link">Gallery</a>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- CTA -->
+
+                <div class="nav-actions">
+
+                    <a href="#admission" class="btn-primary">
+                        Enquire Now
+                    </a>
+
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false"
+                        aria-controls="nav-menu">
+                        <i class="ri-menu-3-line" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- Hero Section -->
+    <!-- ========================================================= -->
+
+    <section class="hero" id="home">
+
+        <!-- Decorative Shapes -->
+
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+
+        <div class="container hero-container">
+
+            <!-- Left Content -->
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    <i class="ri-award-fill" aria-hidden="true"></i> Admissions Open 2026–2027
+                </span>
+
+                <h1>
+                    Where Little Minds
+                    <span>Bloom</span>
+                    Into Bright Futures
+                </h1>
+
+                <p class="hero-description">
+                    Blooming Buds Pre-School & Day Care provides a joyful,
+                    safe and nurturing environment where children learn,
+                    explore, imagine and grow with confidence through
+                    activity-based education and individual attention.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn-primary">
+                        Book a School Visit
+                    </a>
+
+                    <a href="#programs" class="btn-secondary">
+                        Explore Programs
+                    </a>
+
+                </div>
+
+                <!-- Quick Highlights -->
+
+                <div class="hero-highlights">
+
+                    <div class="highlight-card">
+
+                        <div class="highlight-icon">
+                            <i class="ri-shield-check-line" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h4>Safe Campus</h4>
+                            <p>Child Friendly Environment</p>
+                        </div>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <div class="highlight-icon">
+                            <i class="ri-book-open-line" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h4>Activity Learning</h4>
+                            <p>Play • Learn • Explore</p>
+                        </div>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <div class="highlight-icon">
+                            <i class="ri-heart-3-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+                            <h4>Caring Teachers</h4>
+                            <p>Personal Attention</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hero Images -->
+
+            <div class="hero-image">
+
+                <div class="hero-image-wrapper glass">
+
+                    <img src="images/hero-main.jpg" alt="Children learning happily at Blooming Buds Preschool"
+                        class="main-hero-image" width="1200" height="800" loading="eager" fetchpriority="high">
+
+                    <div class="floating-card card-one">
+
+                        <div class="floating-icon">
+                            🎨
+                        </div>
+
+                        <div>
+                            <h5>Creative Learning</h5>
+                            <p>Hands-on Activities</p>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-two">
+
+                        <div class="floating-icon">
+                            ⭐
+                        </div>
+
+                        <div>
+                            <h5>Holistic Growth</h5>
+                            <p>Mind • Body • Values</p>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-three">
+
+                        <div class="floating-icon">
+                            🎓
+                        </div>
+
+                        <div>
+                            <h5>Experienced Faculty</h5>
+                            <p>Learning with Care</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Hero Statistics -->
+
+        <div class="hero-stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-item">
+
+                        <h2 class="counter" data-target="4">0</h2>
+
+                        <p>Programs</p>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h2 class="counter" data-target="100">0</h2>
+
+                        <span>+</span>
+
+                        <p>Fun Activities</p>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h2 class="counter" data-target="100">0</h2>
+
+                        <span>%</span>
+
+                        <p>Safe Environment</p>
+
+                    </div>
+
+                    <div class="stat-item">
+
+                        <h2 class="counter" data-target="1">0</h2>
+
+                        <span>:8</span>
+
+                        <p>Teacher–Student Focus</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SVG Wave -->
+
+        <div class="hero-wave">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,160L80,186.7C160,213,320,267,480,272C640,277,800,235,960,208C1120,181,1280,171,1360,165.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+
+            </svg>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- About Section -->
+    <!-- ========================================================= -->
+
+    <section class="about section" id="about">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    <i class="ri-seedling-line" aria-hidden="true"></i>
+                    About Blooming Buds
+                </span>
+
+                <h2>
+                    Building Strong Foundations for
+                    <span>Happy Lifelong Learners</span>
+                </h2>
+
+                <p>
+                    At Blooming Buds Pre-School & Day Care, we believe every child
+                    is unique and deserves a nurturing environment that encourages
+                    curiosity, creativity and confidence. Our child-centered
+                    approach combines structured learning with joyful play to help
+                    children develop academically, socially and emotionally.
+                </p>
+
+            </div>
+
+            <div class="about-wrapper">
+
+                <!-- Media collage -->
+
+                <div class="about-media reveal">
+
+                    <div class="about-media-grid">
+
+                        <figure class="about-photo about-photo-main">
+
+                            <img src="images/about-main.jpg" width="869" height="549"
+                                alt="Children learning through play at Blooming Buds" loading="lazy">
+
+                        </figure>
+
+                        <figure class="about-photo about-photo-small">
+
+                            <img src="images/about-secondary.jpg" width="870" height="560"
+                                alt="Creative classroom activities" loading="lazy">
+
+                        </figure>
+
+                        <div class="about-note">
+
+                            <div class="about-note-icon">
+                                <i class="ri-heart-3-fill" aria-hidden="true"></i>
+                            </div>
+
+                            <h4>Every Child Matters</h4>
+
+                            <p>
+                                Individual attention, every single day.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="about-badge">
+
+                        <strong>Play</strong>
+                        <span>Learn</span>
+                        <small>Grow</small>
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div class="about-content reveal">
+
+                    <h3>
+                        A Place Where Every Child Feels Safe, Loved and Inspired
+                    </h3>
+
+                    <p class="about-lead">
+                        Our classrooms are thoughtfully designed to inspire
+                        exploration, imagination and independent thinking. Through
+                        engaging activities, interactive learning and caring
+                        guidance, we help every child discover the joy of learning
+                        while building essential life skills.
+                    </p>
+
+                    <p>
+                        We focus on developing communication, creativity,
+                        collaboration, physical development, problem-solving,
+                        emotional well-being and positive values that prepare
+                        children for future academic success.
+                    </p>
+
+                    <div class="about-features reveal-stagger">
+
+                        <article class="feature-item">
+
+                            <div class="feature-icon icon-blue">
+                                <i class="ri-lightbulb-flash-line" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="feature-text">
+
+                                <h4>Activity-Based Learning</h4>
+
+                                <p>
+                                    Interactive lessons that make learning exciting
+                                    and memorable.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="feature-item">
+
+                            <div class="feature-icon icon-green">
+                                <i class="ri-shield-check-line" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="feature-text">
+
+                                <h4>Safe & Hygienic Campus</h4>
+
+                                <p>
+                                    Clean classrooms with a secure environment for
+                                    every child.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="feature-item">
+
+                            <div class="feature-icon icon-pink">
+                                <i class="ri-user-heart-line" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="feature-text">
+
+                                <h4>Individual Attention</h4>
+
+                                <p>
+                                    Personalized guidance to support every child's
+                                    unique learning journey.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                        <article class="feature-item">
+
+                            <div class="feature-icon icon-yellow">
+                                <i class="ri-plant-line" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="feature-text">
+
+                                <h4>Holistic Development</h4>
+
+                                <p>
+                                    Encouraging intellectual, emotional, social and
+                                    physical growth together.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="about-buttons">
+
+                        <a href="#programs" class="btn-primary">
+                            View Our Programs
+                        </a>
+
+                        <a href="#contact" class="btn-secondary">
+                            Schedule a Visit
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Why Choose Us Section -->
+    <!-- ========================================================= -->
+
+    <section class="why-choose section" id="why-choose">
+
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    Why Choose Us
+                </span>
+
+                <h2>
+                    Every Child Deserves the
+                    <span>Best Start in Life</span>
+                </h2>
+
+                <p>
+                    At Blooming Buds Pre-School & Day Care, we provide a caring,
+                    stimulating and joyful environment where children build
+                    confidence, curiosity and lifelong learning skills through
+                    meaningful experiences every day.
+                </p>
+
+            </div>
+
+            <div class="choose-grid reveal-stagger">
+
+                <!-- Card 1 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon blue-bg">
+                        <i class="ri-shield-star-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Safe & Secure Campus</h3>
+
+                    <p>
+                        Child safety is our highest priority. We maintain a secure,
+                        hygienic and welcoming environment where children can learn
+                        and play with confidence.
+                    </p>
+
+                </article>
+
+                <!-- Card 2 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon green-bg">
+                        <i class="ri-book-open-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Activity Based Learning</h3>
+
+                    <p>
+                        Children learn through storytelling, experiments,
+                        educational games, music, art and interactive classroom
+                        activities that make learning enjoyable.
+                    </p>
+
+                </article>
+
+                <!-- Card 3 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon pink-bg">
+                        <i class="ri-user-heart-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Experienced & Caring Teachers</h3>
+
+                    <p>
+                        Our passionate teachers provide individual attention,
+                        encouragement and emotional support to help every child
+                        flourish.
+                    </p>
+
+                </article>
+
+                <!-- Card 4 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon yellow-bg">
+                        <i class="ri-palette-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Creative Development</h3>
+
+                    <p>
+                        Drawing, painting, crafts, music, dance and imaginative
+                        play help children express themselves confidently.
+                    </p>
+
+                </article>
+
+                <!-- Card 5 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon blue-bg">
+                        <i class="ri-team-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Holistic Growth</h3>
+
+                    <p>
+                        We nurture communication, social skills, emotional
+                        intelligence, physical fitness and early academic readiness
+                        together.
+                    </p>
+
+                </article>
+
+                <!-- Card 6 -->
+
+                <article class="choose-card glass">
+
+                    <div class="choose-icon green-bg">
+                        <i class="ri-home-heart-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Parent Partnership</h3>
+
+                    <p>
+                        We work closely with parents through regular communication,
+                        progress updates and collaborative learning support.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <!-- Bottom Highlights -->
+
+            <div class="choose-highlights reveal-stagger">
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Interactive Classrooms</span>
+
+                </div>
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Joyful Learning Environment</span>
+
+                </div>
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Personal Attention</span>
+
+                </div>
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Strong Foundation Skills</span>
+
+                </div>
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Fun Filled Activities</span>
+
+                </div>
+
+                <div class="highlight-box">
+
+                    <i class="ri-check-double-fill" aria-hidden="true"></i>
+
+                    <span>Safe & Caring Atmosphere</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Programs Section -->
+    <!-- ========================================================= -->
+
+    <section class="programs section" id="programs">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    Our Programs
+                </span>
+
+                <h2>
+                    Age Appropriate Learning for
+                    <span>Every Stage of Childhood</span>
+                </h2>
+
+                <p>
+                    Our curriculum is thoughtfully designed to support every stage
+                    of early childhood development through play, creativity,
+                    exploration and structured learning experiences.
+                </p>
+
+            </div>
+
+            <div class="program-grid reveal-stagger">
+
+                <!-- Play Group -->
+
+                <article class="program-card program-blue">
+
+                    <div class="program-image">
+
+                        <img src="images/program-playgroup.jpg" width="1200" height="800" alt="Play Group Program"
+                            loading="lazy">
+
+                        <span class="program-stage">01</span>
+
+                        <span class="program-age">2 – 3 Years</span>
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h3>Play Group</h3>
+
+                        <p>
+                            A joyful introduction to school life where little ones develop confidence, independence and
+                            social skills through fun-filled activities and guided play.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Sensory Activities
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Music &amp; Rhymes
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Free Play
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Fine Motor Skills
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Social Interaction
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="program-btn">
+                            <span>Enquire Now</span>
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Nursery -->
+
+                <article class="program-card program-green featured">
+
+                    <span class="program-flag">
+                        <i class="ri-star-smile-fill" aria-hidden="true"></i>
+                        Most Popular
+                    </span>
+
+                    <div class="program-image">
+
+                        <img src="images/program-nursery.jpg" width="1200" height="800" alt="Nursery Program"
+                            loading="lazy">
+
+                        <span class="program-stage">02</span>
+
+                        <span class="program-age">3 – 4 Years</span>
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h3>Nursery</h3>
+
+                        <p>
+                            Children develop language, number concepts, creativity, communication and confidence through
+                            engaging classroom experiences and activity-based learning.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Early Literacy
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Number Readiness
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Storytelling
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Creative Art
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Outdoor Play
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="program-btn">
+                            <span>Enquire Now</span>
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PP-I -->
+
+                <article class="program-card program-pink">
+
+                    <div class="program-image">
+
+                        <img src="images/program-pp1.jpg" width="1200" height="800" alt="PP-I Program" loading="lazy">
+
+                        <span class="program-stage">03</span>
+
+                        <span class="program-age">4 – 5 Years</span>
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h3>PP-I</h3>
+
+                        <p>
+                            A balanced curriculum that strengthens language, numeracy, observation, creativity and
+                            logical thinking while preparing children for formal schooling.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Reading Readiness
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Writing Practice
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Mathematics Basics
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Science Activities
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Team Learning
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="program-btn">
+                            <span>Enquire Now</span>
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PP-II -->
+
+                <article class="program-card program-yellow">
+
+                    <div class="program-image">
+
+                        <img src="images/program-pp2.jpg" width="856" height="505" alt="PP-II Program" loading="lazy">
+
+                        <span class="program-stage">04</span>
+
+                        <span class="program-age">5 – 6 Years</span>
+
+                    </div>
+
+                    <div class="program-content">
+
+                        <h3>PP-II</h3>
+
+                        <p>
+                            Preparing children for primary school through advanced foundational learning, communication
+                            skills, confidence building and independent thinking.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Reading &amp; Writing
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Mathematics
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                General Awareness
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                Problem Solving
+                            </li>
+
+                            <li>
+                                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+                                School Readiness
+                            </li>
+
+                        </ul>
+
+                        <a href="#contact" class="program-btn">
+                            <span>Enquire Now</span>
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Activities Section -->
+    <!-- ========================================================= -->
+
+    <section class="activities section" id="activities">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    Fun Learning Activities
+                </span>
+
+                <h2>
+                    Learning Through
+                    <span>Play, Creativity & Exploration</span>
+                </h2>
+
+                <p>
+                    Every day at Blooming Buds is filled with exciting experiences
+                    that inspire imagination, curiosity and confidence. Our
+                    activity-based curriculum helps children develop cognitive,
+                    physical, emotional and social skills while having fun.
+                </p>
+
+            </div>
+
+            <div class="activities-grid reveal-stagger">
+
+                <!-- Activity 1 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-art.jpg" width="1200" height="800" alt="Art and Craft Activity"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-palette-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Art & Craft</h3>
+
+                        <p>
+                            Painting, colouring, drawing and craft activities
+                            encourage creativity, imagination and fine motor
+                            development.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 2 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-music.jpg" width="872" height="553" alt="Music and Dance"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-music-2-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Music & Dance</h3>
+
+                        <p>
+                            Rhymes, songs, dance and rhythm activities improve
+                            confidence, expression and coordination.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 3 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-story.jpg" width="872" height="558" alt="Story Telling"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-book-open-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Story Time</h3>
+
+                        <p>
+                            Interactive storytelling develops listening skills,
+                            vocabulary, imagination and communication.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 4 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-games.jpg" width="1200" height="800" alt="Indoor Games"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-puzzle-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Educational Games</h3>
+
+                        <p>
+                            Fun games strengthen memory, observation,
+                            problem-solving and teamwork while keeping learning
+                            enjoyable.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 5 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-outdoor.jpg" width="1000" height="1777" alt="Outdoor Play"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-football-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Outdoor Play</h3>
+
+                        <p>
+                            Physical activities build strength, balance,
+                            coordination and healthy social interaction.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 6 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-festival.jpg" width="1200" height="800" alt="Festival Celebrations"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-gift-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Festival Celebrations</h3>
+
+                        <p>
+                            Celebrating cultural festivals helps children learn
+                            traditions, values, diversity and togetherness in a
+                            joyful way.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 7 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-science.jpg" width="1200" height="800" alt="Simple Science Activities"
+                            loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-flask-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Discovery Activities</h3>
+
+                        <p>
+                            Simple experiments and observation-based learning spark
+                            curiosity and encourage children to ask questions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Activity 8 -->
+
+                <article class="activity-card">
+
+                    <div class="activity-image">
+
+                        <img src="images/activity-yoga.jpg" width="870" height="506" alt="Kids Yoga" loading="lazy">
+
+                        <div class="activity-icon">
+                            <i class="ri-leaf-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h3>Yoga & Wellness</h3>
+
+                        <p>
+                            Gentle yoga and mindfulness activities improve focus,
+                            flexibility, relaxation and emotional well-being.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Bottom Features -->
+
+            <div class="activities-features reveal-stagger">
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Activity Based Learning
+                </div>
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Creative Thinking
+                </div>
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Social Development
+                </div>
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Communication Skills
+                </div>
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Physical Fitness
+                </div>
+
+                <div class="feature-pill">
+                    <i class="ri-star-fill" aria-hidden="true"></i>
+                    Joyful Learning
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Facilities Section -->
+    <!-- ========================================================= -->
+
+    <section class="facilities section" id="facilities">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    Our Facilities
+                </span>
+
+                <h2>
+                    A Safe, Bright &
+                    <span>Child-Friendly Campus</span>
+                </h2>
+
+                <p>
+                    Blooming Buds Pre-School & Day Care offers thoughtfully designed
+                    learning spaces that encourage exploration, creativity and
+                    confidence. Every area of our campus is planned with children's
+                    comfort, safety and development in mind.
+                </p>
+
+            </div>
+
+            <div class="facilities-grid reveal-stagger">
+
+                <!-- Facility 1 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-classroom.jpg" width="1200" height="800" alt="Interactive Classroom"
+                            loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-school-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Interactive Classrooms</h3>
+
+                        <p>
+                            Bright, colorful and engaging classrooms designed to
+                            inspire curiosity, creativity and joyful learning.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Facility 2 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-play-area.jpg" width="871" height="550" alt="Play Area"
+                            loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-football-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Play Area</h3>
+
+                        <p>
+                            Dedicated indoor and outdoor play spaces encouraging
+                            physical activity, teamwork and confidence.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Facility 3 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-library.jpg" width="1000" height="1775" alt="Reading Corner"
+                            loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-book-2-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Reading Corner</h3>
+
+                        <p>
+                            A cozy library filled with storybooks that develops
+                            language, imagination and reading habits.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Facility 4 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-art.jpg" width="872" height="567" alt="Creative Activity Zone"
+                            loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-palette-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Creative Activity Zone</h3>
+
+                        <p>
+                            A dedicated space for art, craft, music and hands-on
+                            learning that nurtures creativity and self-expression.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Facility 5 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-hygiene.jpg" width="1200" height="800"
+                            alt="Clean and Hygienic Environment" loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-heart-pulse-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Clean & Hygienic Environment</h3>
+
+                        <p>
+                            Daily sanitization, child-friendly hygiene practices and
+                            well-maintained classrooms ensure a healthy learning
+                            environment.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Facility 6 -->
+
+                <article class="facility-card glass">
+
+                    <div class="facility-image">
+
+                        <img src="images/facility-daycare.jpg" width="869" height="521" alt="Day Care Support"
+                            loading="lazy">
+
+                        <div class="facility-icon">
+                            <i class="ri-home-heart-line" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="facility-content">
+
+                        <h3>Day Care Support</h3>
+
+                        <p>
+                            A caring, secure and comfortable day care environment
+                            where children feel safe, happy and well looked after.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="facility-highlights reveal-stagger">
+
+                <div class="highlight-item">
+                    <i class="ri-armchair-line" aria-hidden="true"></i>
+                    <span>Child-Friendly Furniture</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="ri-shield-check-line" aria-hidden="true"></i>
+                    <span>Safe Learning Environment</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="ri-sun-line" aria-hidden="true"></i>
+                    <span>Bright & Spacious Classrooms</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="ri-gamepad-line" aria-hidden="true"></i>
+                    <span>Learning Through Play</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="ri-presentation-line" aria-hidden="true"></i>
+                    <span>Interactive Teaching Aids</span>
+                </div>
+
+                <div class="highlight-item">
+                    <i class="ri-heart-3-line" aria-hidden="true"></i>
+                    <span>Warm & Caring Atmosphere</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Gallery Section -->
+    <!-- ========================================================= -->
+
+    <section class="gallery section" id="gallery">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    <i class="ri-camera-3-line" aria-hidden="true"></i>
+                    Our Gallery
+                </span>
+
+                <h2>
+                    Capturing Moments of
+                    <span>Learning & Happiness</span>
+                </h2>
+
+                <p>
+                    Every smile tells a story. Explore glimpses of our classrooms,
+                    celebrations, creative activities and joyful moments that make
+                    Blooming Buds a wonderful place for every child to learn and
+                    grow.
+                </p>
+
+            </div>
+
+            <div class="gallery-grid reveal-stagger">
+
+                <!-- Image 1 -->
+
+                <figure class="gallery-item gallery-item-lg">
+
+                    <img src="images/facility-classroom.jpg" width="1200" height="800"
+                        alt="Children enjoying classroom activities" loading="lazy">
+
+                    <span class="gallery-tag">Classroom</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Joyful Learning larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Joyful Learning</h4>
+
+                        <p>Interactive classroom experiences every day.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 2 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/activity-art.jpg" width="1200" height="800" alt="Creative art and craft session"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Creativity</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Art &amp; Craft larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Art & Craft</h4>
+
+                        <p>Little hands making big ideas.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 3 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/activity-outdoor.jpg" width="1000" height="1777" alt="Outdoor play activities"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Play</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Outdoor Fun larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Outdoor Fun</h4>
+
+                        <p>Fresh air, games and giggles.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 4 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/activity-story.jpg" width="872" height="558" alt="Story telling session"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Story</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Story Time larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Story Time</h4>
+
+                        <p>Where imagination begins.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 5 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/activity-festival.jpg" width="1200" height="800" alt="Festival celebration"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Events</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Celebrations larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Celebrations</h4>
+
+                        <p>Festivals, colours and togetherness.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 6 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/activity-music.jpg" width="872" height="553" alt="Music and dance activity"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Music</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Music &amp; Dance larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Music & Dance</h4>
+
+                        <p>Rhythm, rhymes and confidence.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 7 -->
+
+                <figure class="gallery-item">
+
+                    <img src="images/facility-art.jpg" width="872" height="567" alt="Creative classroom" loading="lazy">
+
+                    <span class="gallery-tag">Campus</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Creative Classroom larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Creative Classroom</h4>
+
+                        <p>Spaces built for curious minds.</p>
+
+                    </figcaption>
+
+                </figure>
+
+                <!-- Image 8 -->
+
+                <figure class="gallery-item gallery-item-wide">
+
+                    <img src="images/about-main.jpg" width="869" height="549" alt="Happy children at Blooming Buds"
+                        loading="lazy">
+
+                    <span class="gallery-tag">Memories</span>
+
+                    <button class="gallery-zoom" type="button" aria-label="View Happy Memories larger">
+                        <i class="ri-add-line" aria-hidden="true"></i>
+                    </button>
+
+                    <figcaption>
+
+                        <h4>Happy Memories</h4>
+
+                        <p>Creating smiles that last a lifetime.</p>
+
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <!-- Gallery Statistics -->
+
+            <div class="gallery-stats reveal-stagger">
+
+                <div class="gallery-stat">
+
+                    <h3 class="counter" data-target="100">0</h3>
+
+                    <span>+</span>
+
+                    <p>Learning Activities</p>
+
+                </div>
+
+                <div class="gallery-stat">
+
+                    <h3 class="counter" data-target="365">0</h3>
+
+                    <span>+</span>
+
+                    <p>Happy Learning Days</p>
+
+                </div>
+
+                <div class="gallery-stat">
+
+                    <h3 class="counter" data-target="20">0</h3>
+
+                    <span>+</span>
+
+                    <p>Creative Events</p>
+
+                </div>
+
+                <div class="gallery-stat">
+
+                    <h3 class="counter" data-target="100">0</h3>
+
+                    <span>%</span>
+
+                    <p>Smiles Every Day</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Testimonials Section -->
+    <!-- ========================================================= -->
+
+    <section class="testimonials section" id="testimonials">
+
+        <!-- Soft decorative background -->
+
+        <div class="testimonials-decor" aria-hidden="true">
+            <span class="t-blob t-blob-1"></span>
+            <span class="t-blob t-blob-2"></span>
+        </div>
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    <i class="ri-chat-heart-line" aria-hidden="true"></i>
+                    Parent Testimonials
+                </span>
+
+                <h2>
+                    Trusted by
+                    <span>Happy Parents</span>
+                </h2>
+
+                <p>
+                    Nothing makes us happier than seeing children enjoy learning and
+                    parents feel confident about their child's early education.
+                    Here are a few words shared by our wonderful Blooming Buds
+                    families.
+                </p>
+
+            </div>
+
+            <!-- Rating Summary -->
+
+            <div class="rating-summary reveal">
+
+                <div class="rating-score">
+
+                    <strong>4.9</strong>
+
+                    <div class="rating-score-meta">
+
+                        <div class="rating-stars" role="img" aria-label="Rated 4.9 out of 5">
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-half-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <span>Average parent rating</span>
+
+                    </div>
+
+                </div>
+
+                <div class="rating-facts">
+
+                    <div class="rating-fact">
+
+                        <i class="ri-group-line" aria-hidden="true"></i>
+
+                        <div>
+                            <strong>200+</strong>
+                            <span>Happy families</span>
+                        </div>
+
+                    </div>
+
+                    <div class="rating-fact">
+
+                        <i class="ri-thumb-up-line" aria-hidden="true"></i>
+
+                        <div>
+                            <strong>95%</strong>
+                            <span>Would recommend us</span>
+                        </div>
+
+                    </div>
+
+                    <div class="rating-fact">
+
+                        <i class="ri-shield-check-line" aria-hidden="true"></i>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Verified parents</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonials-grid reveal-stagger">
+
+                <!-- Testimonial 1 -->
+
+                <article class="testimonial-card" data-accent="blue">
+
+                    <span class="testimonial-quote" aria-hidden="true">
+                        <i class="ri-double-quotes-r" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-rating" role="img" aria-label="Rated 5 out of 5">
+
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+
+                        </div>
+
+                        <span class="testimonial-verified">
+                            <i class="ri-verified-badge-fill" aria-hidden="true"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p class="testimonial-text">
+                        "Blooming Buds has been a wonderful beginning for our child.
+                        The teachers are caring, patient and always encourage
+                        learning through fun activities. We have seen tremendous
+                        improvement in confidence and communication."
+                    </p>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            <i class="ri-user-smile-line" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="author-meta">
+
+                            <h4>Parent</h4>
+
+                            <span>Blooming Buds Family</span>
+
+                        </div>
+
+                        <span class="author-program">Nursery</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Testimonial 2 -->
+
+                <article class="testimonial-card" data-accent="green">
+
+                    <span class="testimonial-quote" aria-hidden="true">
+                        <i class="ri-double-quotes-r" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-rating" role="img" aria-label="Rated 5 out of 5">
+
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+
+                        </div>
+
+                        <span class="testimonial-verified">
+                            <i class="ri-verified-badge-fill" aria-hidden="true"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p class="testimonial-text">
+                        "The classrooms are bright, clean and welcoming. Every day
+                        our daughter comes home excited to share what she learned.
+                        We appreciate the caring environment and personal attention
+                        given to every child."
+                    </p>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            <i class="ri-user-heart-line" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="author-meta">
+
+                            <h4>Parent</h4>
+
+                            <span>Blooming Buds Family</span>
+
+                        </div>
+
+                        <span class="author-program">PP-I</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Testimonial 3 -->
+
+                <article class="testimonial-card" data-accent="pink">
+
+                    <span class="testimonial-quote" aria-hidden="true">
+                        <i class="ri-double-quotes-r" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="testimonial-top">
+
+                        <div class="testimonial-rating" role="img" aria-label="Rated 5 out of 5">
+
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+                            <i class="ri-star-fill" aria-hidden="true"></i>
+
+                        </div>
+
+                        <span class="testimonial-verified">
+                            <i class="ri-verified-badge-fill" aria-hidden="true"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p class="testimonial-text">
+                        "We were looking for a preschool where our son would feel
+                        safe and happy. Blooming Buds exceeded our expectations.
+                        The teachers are friendly and the activity-based learning
+                        keeps children engaged every day."
+                    </p>
+
+                    <div class="testimonial-author">
+
+                        <div class="author-avatar">
+                            <i class="ri-parent-line" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="author-meta">
+
+                            <h4>Parent</h4>
+
+                            <span>Blooming Buds Family</span>
+
+                        </div>
+
+                        <span class="author-program">Play Group</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Trust Highlights -->
+
+            <div class="testimonial-highlights reveal-stagger">
+
+                <div class="trust-item" data-accent="pink">
+
+                    <div class="trust-icon">
+                        <i class="ri-emotion-happy-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Happy Children</h3>
+
+                    <p>
+                        A joyful environment where every child enjoys coming to
+                        school.
+                    </p>
+
+                </div>
+
+                <div class="trust-item" data-accent="blue">
+
+                    <div class="trust-icon">
+                        <i class="ri-heart-2-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Caring Teachers</h3>
+
+                    <p>
+                        Passionate educators who nurture every child's individual
+                        strengths.
+                    </p>
+
+                </div>
+
+                <div class="trust-item" data-accent="green">
+
+                    <div class="trust-icon">
+                        <i class="ri-award-line" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Quality Learning</h3>
+
+                    <p>
+                        A balanced curriculum that prepares children for lifelong
+                        success.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Admissions Section -->
+    <!-- ========================================================= -->
+
+    <section class="admission section" id="admission">
+
+        <div class="container">
+
+            <div class="admission-wrapper reveal">
+
+                <!-- Decorative glows and pattern -->
+
+                <span class="admission-glow admission-glow-1" aria-hidden="true"></span>
+                <span class="admission-glow admission-glow-2" aria-hidden="true"></span>
+
+                <div class="admission-content">
+
+                    <span class="admission-pill">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        Admissions Open 2026–2027
+                    </span>
+
+                    <h2>
+                        Give Your Child the
+                        <span>Best Start to Learning</span>
+                    </h2>
+
+                    <p>
+                        Admissions are now open for the Academic Year 2026–2027.
+                        Join Blooming Buds Pre-School &amp; Day Care and provide your
+                        child with a joyful, caring and inspiring environment where
+                        learning happens through exploration, creativity and play.
+                    </p>
+
+                    <div class="admission-features">
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Play Group, Nursery, PP-I &amp; PP-II</span>
+
+                        </div>
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Activity-Based Learning Curriculum</span>
+
+                        </div>
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Safe, Hygienic &amp; Child-Friendly Campus</span>
+
+                        </div>
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Experienced &amp; Caring Teachers</span>
+
+                        </div>
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Individual Attention for Every Child</span>
+
+                        </div>
+
+                        <div class="admission-feature">
+
+                            <i class="ri-check-line" aria-hidden="true"></i>
+
+                            <span>Limited Seats Available</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="admission-buttons">
+
+                        <a href="#contact" class="btn-primary">
+                            <i class="ri-edit-2-line" aria-hidden="true"></i>
+                            Enquire Now
+                        </a>
+
+                        <a href="tel:+9196766 05343" class="btn-secondary">
+                            <i class="ri-phone-line" aria-hidden="true"></i>
+                            Call Now
+                        </a>
+
+                    </div>
+
+                    <p class="admission-note">
+                        <i class="ri-calendar-check-line" aria-hidden="true"></i>
+                        School visits welcome Monday – Saturday, 9:00 AM – 5:00 PM
+                    </p>
+
+                </div>
+
+                <div class="admission-image">
+
+                    <div class="admission-image-frame zoom-image">
+
+                        <img src="images/facility-daycare.jpg" width="869" height="521"
+                            alt="Admissions Open at Blooming Buds Preschool" loading="lazy">
+
+                    </div>
+
+                    <div class="admission-badge">
+
+                        <h3>2026–2027</h3>
+
+                        <p>Admissions Open</p>
+
+                    </div>
+
+                    <div class="admission-seats">
+
+                        <i class="ri-flashlight-fill" aria-hidden="true"></i>
+
+                        <span>Limited seats — enrol early</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Contact Section -->
+    <!-- ========================================================= -->
+
+    <section class="contact section" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    <i class="ri-customer-service-2-line" aria-hidden="true"></i>
+                    Contact Us
+                </span>
+
+                <h2>
+                    We'd Love to
+                    <span>Hear From You</span>
+                </h2>
+
+                <p>
+                    Planning to visit our school or have questions about admissions?
+                    Get in touch with us. Our team will be happy to assist you and
+                    arrange a school visit at your convenience.
+                </p>
+
+            </div>
+
+            <div class="contact-wrapper">
+
+                <!-- Contact Information -->
+
+                <div class="contact-info reveal-stagger">
+
+                    <div class="contact-card" data-accent="blue">
+
+                        <div class="contact-icon">
+                            <i class="ri-map-pin-2-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-body">
+
+                            <h3>Visit Our School</h3>
+
+                            <p>
+                                Blooming Buds Pre-School &amp; Day Care<br>
+                                Hyderabad, Telangana, India
+                            </p>
+
+                            <a class="contact-link" href="https://www.google.com/maps?q=Hyderabad,+Telangana"
+                                target="_blank" rel="noopener">
+                                Get directions
+                                <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card" data-accent="green">
+
+                        <div class="contact-icon">
+                            <i class="ri-phone-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-body">
+
+                            <h3>Call Us</h3>
+
+                            <p>
+                                <a href="tel:+9196766 05343">
+                                    +91 96766 05343
+                                </a>
+                            </p>
+
+                            <span class="contact-hint">
+                                Mon – Sat, 9:00 AM – 5:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card" data-accent="pink">
+
+                        <div class="contact-icon">
+                            <i class="ri-mail-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-body">
+
+                            <h3>Email</h3>
+
+                            <p>
+                                <a href="mailto:info.bloomingbudsschools@gmail.com">
+                                    info.bloomingbudsschools@gmail.com
+                                </a>
+                            </p>
+
+                            <span class="contact-hint">
+                                We reply within one working day
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card" data-accent="yellow">
+
+                        <div class="contact-icon">
+                            <i class="ri-time-fill" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="contact-body">
+
+                            <h3>School Hours</h3>
+
+                            <p>
+                                Monday – Saturday<br>
+                                9:00 AM – 4:00 PM
+                            </p>
+
+                            <span class="contact-hint">
+                                Day care available till 8:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Actions -->
+
+                    <div class="contact-quick">
+
+                        <a class="quick-btn quick-call" href="tel:+9196766 05343">
+                            <i class="ri-phone-fill" aria-hidden="true"></i>
+                            Call
+                        </a>
+
+                        <a class="quick-btn quick-whatsapp" href="https://wa.me/919876543210?text=Hello%20Blooming%20Buds.%20I%20would%20like%20to%20know%20about%20admissions."
+							target="_blank""
+                            rel="noopener">
+                            <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+                            WhatsApp
+                        </a>
+
+                        <a class="quick-btn quick-mail" href="mailto:info.bloomingbudsschools@gmail.com">
+                            <i class="ri-mail-fill" aria-hidden="true"></i>
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+
+                <div class="contact-form-wrapper reveal">
+
+                    <div class="form-head">
+
+                        <span class="form-badge">
+                            <i class="ri-calendar-event-line" aria-hidden="true"></i>
+                            Book a School Visit
+                        </span>
+
+                        <h3>Send Us an Enquiry</h3>
+
+                        <p>
+                            Share a few details and our team will call you back to
+                            answer your questions and schedule a campus tour.
+                        </p>
+
+                    </div>
+
+                    <form class="contact-form" action="#" method="post">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="parent-name">
+                                    Parent Name <span aria-hidden="true">*</span>
+                                </label>
+
+                                <div class="input-shell">
+
+                                    <i class="ri-user-3-line" aria-hidden="true"></i>
+
+                                    <input id="parent-name" type="text" name="name" placeholder="Enter parent name"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="parent-phone">
+                                    Mobile Number <span aria-hidden="true">*</span>
+                                </label>
+
+                                <div class="input-shell">
+
+                                    <i class="ri-phone-line" aria-hidden="true"></i>
+
+                                    <input id="parent-phone" type="tel" name="phone"
+                                        placeholder="10-digit mobile number" required>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="parent-email">
+                                    Email Address
+                                </label>
+
+                                <div class="input-shell">
+
+                                    <i class="ri-mail-line" aria-hidden="true"></i>
+
+                                    <input id="parent-email" type="email" name="email" placeholder="you@example.com">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="program">
+                                    Program <span aria-hidden="true">*</span>
+                                </label>
+
+                                <div class="input-shell select-shell">
+
+                                    <i class="ri-book-open-line" aria-hidden="true"></i>
+
+                                    <select id="program" name="program" required>
+
+                                        <option value="">
+                                            Select Program
+                                        </option>
+
+                                        <option>
+                                            Play Group
+                                        </option>
+
+                                        <option>
+                                            Nursery
+                                        </option>
+
+                                        <option>
+                                            PP-I
+                                        </option>
+
+                                        <option>
+                                            PP-II
+                                        </option>
+
+                                    </select>
+
+                                    <i class="ri-arrow-down-s-line select-arrow" aria-hidden="true"></i>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Your Message
+                            </label>
+
+                            <div class="input-shell textarea-shell">
+
+                                <i class="ri-chat-1-line" aria-hidden="true"></i>
+
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Tell us about your child, preferred visit date or any questions"></textarea>
+
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn-primary submit-btn">
+                            <i class="ri-send-plane-fill" aria-hidden="true"></i>
+                            Send Enquiry
+                        </button>
+
+                        <p class="form-note">
+                            <i class="ri-shield-check-line" aria-hidden="true"></i>
+                            Your details stay private and are used only to respond to
+                            your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Google Map -->
+
+            <div class="map-wrapper reveal">
+
+                <div class="map-head">
+
+                    <div class="map-head-text">
+
+                        <h3>
+                            <i class="ri-map-2-line" aria-hidden="true"></i>
+                            Find Us on the Map
+                        </h3>
+
+                        <p>Blooming Buds Pre-School &amp; Day Care, Hyderabad</p>
+
+                    </div>
+
+                    <a class="map-btn" href="https://maps.google.com/?q=Blooming+Buds+Pre-School+Hyderabad" target="_blank"
+                        rel="noopener">
+                        <i class="ri-navigation-fill" aria-hidden="true"></i>
+                        Get Directions
+                    </a>
+
+                </div>
+
+                <iframe title="Blooming Buds Pre-School & Day Care Location"
+                    src="https://www.google.com/maps?q=Hyderabad,+Telangana&output=embed" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- Footer -->
+    <!-- ========================================================= -->
+
+    <footer class="footer">
+
+        <!-- SVG Wave -->
+
+        <div class="footer-wave">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+
+                <path fill="#233042" fill-opacity="1"
+                    d="M0,96L60,122.7C120,149,240,203,360,202.7C480,203,600,149,720,149.3C840,149,960,203,1080,202.7C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+
+            </svg>
+
+        </div>
+
+        <div class="container">
+
+            <div class="footer-grid reveal-stagger">
+
+                <!-- School Info -->
+
+                <div class="footer-column">
+
+                    <a href="#home" class="footer-logo">
+
+                        <img src="images/logo.png" width="386" height="519" alt="Blooming Buds Logo">
+
+                        <div>
+
+                            <h3>
+                                <span class="blue">Blooming</span>
+                                <span class="green">Buds</span>
+                            </h3>
+
+                            <p>Pre-School & Day Care</p>
+
+                        </div>
+
+                    </a>
+
+                    <p class="footer-description">
+
+                        Blooming Buds Pre-School & Day Care is committed to
+                        nurturing confident, curious and compassionate learners
+                        through joyful experiences, caring guidance and
+                        activity-based education.
+
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="ri-facebook-fill" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="ri-instagram-line" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="ri-youtube-fill" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="ri-whatsapp-line" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="#home">Home</a></li>
+
+                        <li><a href="#about">About Us</a></li>
+
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+
+                        <li><a href="#programs">Programs</a></li>
+
+                        <li><a href="#activities">Activities</a></li>
+
+                        <li><a href="#gallery">Gallery</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Programs -->
+
+                <div class="footer-column">
+
+                    <h3>Programs</h3>
+
+                    <ul>
+
+                        <li>Play Group</li>
+
+                        <li>Nursery</li>
+
+                        <li>PP-I</li>
+
+                        <li>PP-II</li>
+
+                        <li>Activity-Based Learning</li>
+
+                        <li>Day Care</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact</h3>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="ri-map-pin-fill" aria-hidden="true"></i>
+
+                            <span>
+                                Hyderabad, Telangana, India
+                            </span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-phone-fill" aria-hidden="true"></i>
+
+                            <a href="tel:+9196766 05343">
+                                +91 96766 05343
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-mail-fill" aria-hidden="true"></i>
+
+                            <a href="mailto:info.bloomingbudsschools@gmail.com">
+                                info.bloomingbudsschools@gmail.com
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-time-fill" aria-hidden="true"></i>
+
+                            <span>
+                                Mon – Sat : 9:00 AM – 5:00 PM
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    © <span class="current-year">2026</span> Blooming Buds Pre-School & Day Care.
+                    All Rights Reserved.
 
                 </p>
 
-                <div class="footer-social">
+                <div class="footer-bottom-links">
 
-                    <a href="#" aria-label="Facebook">
-                        <i class="ri-facebook-fill"></i>
+                    <a href="#">
+                        Privacy Policy
                     </a>
 
-                    <a href="#" aria-label="Instagram">
-                        <i class="ri-instagram-line"></i>
-                    </a>
+                    <span>|</span>
 
-                    <a href="#" aria-label="YouTube">
-                        <i class="ri-youtube-fill"></i>
-                    </a>
-
-                    <a href="#" aria-label="WhatsApp">
-                        <i class="ri-whatsapp-line"></i>
+                    <a href="#">
+                        Terms & Conditions
                     </a>
 
                 </div>
 
             </div>
 
-            <!-- Quick Links -->
-
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li><a href="#home">Home</a></li>
-
-                    <li><a href="#about">About Us</a></li>
-
-                    <li><a href="#why-choose">Why Choose Us</a></li>
-
-                    <li><a href="#programs">Programs</a></li>
-
-                    <li><a href="#activities">Activities</a></li>
-
-                    <li><a href="#gallery">Gallery</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-
-                </ul>
-
-            </div>
-
-            <!-- Programs -->
-
-            <div class="footer-column">
-
-                <h3>Programs</h3>
-
-                <ul>
-
-                    <li>Play Group</li>
-
-                    <li>Nursery</li>
-
-                    <li>PP-I</li>
-
-                    <li>PP-II</li>
-
-                    <li>Activity-Based Learning</li>
-
-                    <li>Day Care</li>
-
-                </ul>
-
-            </div>
-
-            <!-- Contact -->
-
-            <div class="footer-column">
-
-                <h3>Contact</h3>
-
-                <ul class="footer-contact">
-
-                    <li>
-
-                        <i class="ri-map-pin-fill"></i>
-
-                        <span>
-                            Hyderabad, Telangana, India
-                        </span>
-
-                    </li>
-
-                    <li>
-
-                        <i class="ri-phone-fill"></i>
-
-                        <a href="tel:+91XXXXXXXXXX">
-                            +91 XXXXX XXXXX
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <i class="ri-mail-fill"></i>
-
-                        <a href="mailto:info@bloomingbudsschools.in">
-                            info@bloomingbudsschools.in
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <i class="ri-time-fill"></i>
-
-                        <span>
-                            Mon – Sat : 9:00 AM – 5:00 PM
-                        </span>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
         </div>
 
-        <!-- Footer Bottom -->
+    </footer>
 
-        <div class="footer-bottom">
+    <!-- ========================================================= -->
+    <!-- Floating WhatsApp Button -->
+    <!-- ========================================================= -->
 
-            <p>
+    <a href="https://wa.me/9196766 05343" class="whatsapp-float" target="_blank" rel="noopener"
+        aria-label="Chat on WhatsApp">
 
-                © 2026 Blooming Buds Pre-School & Day Care.
-                All Rights Reserved.
+        <span class="float-tooltip">Chat with us</span>
 
-            </p>
+        <span class="whatsapp-ring" aria-hidden="true"></span>
 
-            <div class="footer-bottom-links">
+        <i class="ri-whatsapp-line" aria-hidden="true"></i>
 
-                <a href="#">
-                    Privacy Policy
-                </a>
+    </a>
 
-                <span>|</span>
+    <!-- ========================================================= -->
+    <!-- Back To Top Button -->
+    <!-- ========================================================= -->
 
-                <a href="#">
-                    Terms & Conditions
-                </a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
 
-            </div>
+        <span class="float-tooltip">Back to top</span>
 
-        </div>
+        <i class="ri-arrow-up-line" aria-hidden="true"></i>
+
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- Gallery Lightbox -->
+    <!-- ========================================================= -->
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" hidden>
+
+        <button class="lightbox-close" type="button" aria-label="Close gallery viewer">
+            <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
+            <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+        </button>
+
+        <figure class="lightbox-figure">
+
+            <img class="lightbox-image" src="" alt="">
+
+            <figcaption class="lightbox-caption"></figcaption>
+
+        </figure>
+
+        <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">
+            <i class="ri-arrow-right-s-line" aria-hidden="true"></i>
+        </button>
 
     </div>
 
-</footer>
+    <!-- JavaScript -->
 
-<!-- ========================================================= -->
-<!-- Floating WhatsApp Button -->
-<!-- ========================================================= -->
-
-<a
-    href="https://wa.me/91XXXXXXXXXX"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat on WhatsApp">
-
-    <i class="ri-whatsapp-line"></i>
-
-</a>
-
-<!-- ========================================================= -->
-<!-- Back To Top Button -->
-<!-- ========================================================= -->
-
-<button
-    class="back-to-top"
-    id="backToTop"
-    aria-label="Back to Top">
-
-    <i class="ri-arrow-up-line"></i>
-
-</button>
-
-<!-- JavaScript -->
-
-<script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </body>
+
 </html>
