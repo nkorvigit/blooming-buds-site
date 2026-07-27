@@ -86,6 +86,16 @@
     "sameAs":[]
   }
   </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+	<script>
+	emailjs.init({
+		publicKey: "ZV-CY9QBoSijz_P0e",
+	});
+	</script>
+
+	<script src="script.js"></script>
 
 </head>
 
@@ -2564,7 +2574,7 @@
 
                     </div>
 
-                    <form class="contact-form" action="#" method="post">
+                    <form id="enquiryForm" class="contact-form" action="#" method="post">
 
                         <div class="form-row">
 
@@ -2578,7 +2588,7 @@
 
                                     <i class="ri-user-3-line" aria-hidden="true"></i>
 
-                                    <input id="parent-name" type="text" name="name" placeholder="Enter parent name"
+                                    <input id="parent-name" type="text" name="parent_name" placeholder="Enter parent name"
                                         required>
 
                                 </div>
@@ -2595,7 +2605,7 @@
 
                                     <i class="ri-phone-line" aria-hidden="true"></i>
 
-                                    <input id="parent-phone" type="tel" name="phone"
+                                    <input id="phone" name="phone" type="tel" name="phone"
                                         placeholder="10-digit mobile number" required>
 
                                 </div>
@@ -2616,7 +2626,7 @@
 
                                     <i class="ri-mail-line" aria-hidden="true"></i>
 
-                                    <input id="parent-email" type="email" name="email" placeholder="you@example.com">
+                                    <input id="email" type="email" name="email" placeholder="you@example.com">
 
                                 </div>
 
@@ -2681,7 +2691,7 @@
 
                         </div>
 
-                        <button type="submit" class="btn-primary submit-btn">
+                        <button type="submit" id="sendEnquiryBtn" class="btn-primary submit-btn">
                             <i class="ri-send-plane-fill" aria-hidden="true"></i>
                             Send Enquiry
                         </button>

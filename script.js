@@ -963,3 +963,65 @@ function initCurrentYear() {
 /* ==========================================================
    END
 ========================================================== */
+
+
+/* ==========================================================
+   Enquiry
+========================================================== */
+
+const enquiryForm = document.getElementById("enquiryForm");
+const sendButton = document.getElementById("sendEnquiryBtn");
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        sendButton.disabled = true;
+
+        sendButton.innerHTML = `
+            <i class="ri-loader-4-line ri-spin"></i>
+            <span>Sending...</span>
+        `;
+
+        emailjs.sendForm(
+
+            "service_o4qs2t8",
+
+            "template_hzxj18i",
+
+            enquiryForm
+
+        )
+
+        .then(() => {
+
+            alert("✅ Thank you! Your enquiry has been sent successfully.");
+
+            enquiryForm.reset();
+
+        })
+
+        .catch((error) => {
+
+            console.error(error);
+
+            alert("❌ Sorry! Something went wrong. Please try again.");
+
+        })
+
+        .finally(() => {
+
+            sendButton.disabled = false;
+
+            sendButton.innerHTML = `
+                <i class="ri-send-plane-fill"></i>
+                <span>Send Enquiry</span>
+            `;
+
+        });
+
+    });
+
+}
